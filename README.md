@@ -1,147 +1,233 @@
-# 💰 Planej.ai - Planejador Financeiro Inteligente
+# 💰 Planej.ai - Planejador Financeiro Inteligente com IA
 
-## 📌 Sobre o Projeto
+![React](https://img.shields.io/badge/React-19-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
+![Vite](https://img.shields.io/badge/Vite-Latest-purple)
+![Google Gemini](https://img.shields.io/badge/Google-Gemini-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-O Planej.ai é uma aplicação web desenvolvida com React, TypeScript e Inteligência Artificial Generativa que auxilia usuários a realizarem planejamentos financeiros personalizados.
+## 📖 Sobre o Projeto
 
-O sistema coleta informações financeiras por meio de um formulário interativo e utiliza IA para gerar diagnósticos, recomendações e insights personalizados, ajudando o usuário a tomar decisões financeiras mais conscientes.
+O **Planej.ai** é uma aplicação web desenvolvida com React, TypeScript e Inteligência Artificial Generativa para auxiliar usuários no planejamento financeiro pessoal.
 
-Este projeto foi desenvolvido como prática de integração entre React e IA Generativa, aplicando conceitos modernos de desenvolvimento front-end, gerenciamento de estado, roteamento e consumo de APIs.
+A plataforma permite que o usuário informe sua situação financeira atual, defina uma meta financeira e receba uma análise personalizada gerada por IA, contendo diagnósticos, sugestões de economia, ideias de renda extra e recomendações para alcançar seus objetivos.
 
----
-
-## 🎯 Objetivos
-
-* Aplicar conceitos de React e TypeScript.
-* Construir interfaces modernas e responsivas.
-* Implementar formulários multi-step.
-* Integrar Inteligência Artificial Generativa.
-* Trabalhar com persistência de dados utilizando LocalStorage.
-* Gerar análises financeiras personalizadas.
+O projeto foi desenvolvido com foco em boas práticas de desenvolvimento Front-End, componentização, gerenciamento de estado, persistência local de dados e integração com APIs de Inteligência Artificial.
 
 ---
 
-## 🚀 Funcionalidades
+# 🎯 Objetivos
 
-### 📋 Simulação Financeira
-
-O usuário informa:
-
-* Renda mensal;
-* Gastos fixos;
-* Dívidas e parcelas;
-* Objetivo financeiro;
-* Valor da meta;
-* Prazo desejado.
-
-### 📊 Cálculos Automáticos
-
-A aplicação calcula:
-
-* Economia mensal disponível;
-* Valor necessário para atingir a meta;
-* Viabilidade financeira da meta;
-* Saldo restante após a reserva financeira.
-
-### 🤖 Inteligência Artificial
-
-A integração com IA Generativa fornece:
-
-* Diagnóstico financeiro personalizado;
-* Sugestões de economia;
-* Ideias para geração de renda extra;
-* Recomendações de investimentos;
-* Mensagem motivacional personalizada.
-
-### 🌙 Sistema de Temas
-
-* Tema Claro;
-* Tema Escuro;
-* Persistência da preferência do usuário.
-
-### 💾 Histórico de Simulações
-
-* Salvamento automático das simulações;
-* Identificador único para cada registro;
-* Recuperação dos dados armazenados.
+- Auxiliar usuários no planejamento financeiro.
+- Demonstrar integração entre React e IA Generativa.
+- Aplicar conceitos modernos de Front-End.
+- Utilizar TypeScript para tipagem segura.
+- Trabalhar com persistência de dados locais.
+- Criar uma interface moderna e responsiva.
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+# 🚀 Funcionalidades
 
-### Front-End
+## 📋 Formulário Multi-Step
 
-* React
-* TypeScript
-* Vite
-* React Router DOM
+O usuário preenche informações financeiras em etapas:
 
-### Estilização
-
-* Tailwind CSS
-
-### Componentes e Ícones
-
-* Lucide React
-* React Loading Skeleton
-
-### Inteligência Artificial
-
-* Google Gemini API
-
-### Armazenamento
-
-* LocalStorage
+- Renda mensal
+- Custos fixos
+- Dívidas e parcelas
+- Nome da meta financeira
+- Valor da meta
+- Prazo desejado
 
 ---
 
-## 📂 Estrutura do Projeto
+## 📊 Simulação Financeira
+
+Após preencher os dados, o sistema calcula automaticamente:
+
+- Economia mensal disponível
+- Valor necessário para atingir a meta
+- Viabilidade financeira do objetivo
+- Saldo restante após planejamento
+
+---
+
+## 🤖 Inteligência Artificial
+
+Integração com a API do Google Gemini para gerar:
+
+### Diagnóstico Financeiro
+
+Análise da situação financeira atual.
+
+### Sugestões de Economia
+
+Recomendações para reduzir gastos.
+
+### Fontes de Renda Extra
+
+Ideias de geração de renda complementar.
+
+### Recomendações de Investimento
+
+Sugestões de investimentos compatíveis com o perfil informado.
+
+### Mensagem Motivacional
+
+Mensagem personalizada baseada na meta do usuário.
+
+---
+
+## 🌗 Sistema de Temas
+
+A aplicação possui:
+
+- Tema Claro
+- Tema Escuro
+- Salvamento automático da preferência do usuário
+
+---
+
+## 🕒 Histórico de Simulações
+
+Permite:
+
+- Armazenar simulações realizadas
+- Consultar simulações anteriores
+- Recuperar resultados por identificador único
+
+---
+
+# 🛠 Tecnologias Utilizadas
+
+## Front-End
+
+- React
+- TypeScript
+- Vite
+- React Router DOM
+
+## Interface
+
+- Tailwind CSS
+- Lucide React
+- React Loading Skeleton
+
+## Gerenciamento de Estado
+
+- React Hooks
+- Context API
+
+## Persistência
+
+- LocalStorage
+
+## Inteligência Artificial
+
+- Google Gemini API
+
+---
+
+# 📂 Estrutura do Projeto
 
 ```text
-src/
+src
 │
-├── assets/
-├── components/
-│   ├── features/
-│   ├── layout/
-│   └── shared/
+├── assets
+│   └── images
 │
-├── context/
-├── data/
-├── hooks/
-├── pages/
-├── services/
-├── utils/
+├── components
+│   ├── features
+│   │   ├── Insights
+│   │   ├── Simulation
+│   │   └── SimulationResults
+│   │
+│   ├── layout
+│   └── shared
 │
-├── App.tsx
+├── context
+│   └── theme
+│
+├── data
+│
+├── hooks
+│
+├── pages
+│
+├── services
+│
+├── utils
+│
 ├── router.tsx
+├── App.tsx
 └── main.tsx
 ```
 
 ---
 
-## 🔄 Fluxo da Aplicação
+# 🔄 Fluxo da Aplicação
 
-1. O usuário inicia uma nova simulação.
-2. Preenche o formulário financeiro.
-3. Os dados são armazenados localmente.
-4. Um identificador único é gerado.
-5. Os dados são enviados para a IA.
-6. A IA gera um diagnóstico personalizado.
-7. O resultado é exibido na tela.
-8. A simulação fica salva para futuras consultas.
+### 1️⃣ Nova Simulação
+
+O usuário inicia uma nova simulação financeira.
+
+### 2️⃣ Preenchimento
+
+Os dados são coletados através de um formulário multi-step.
+
+### 3️⃣ Armazenamento
+
+As informações são salvas no LocalStorage.
+
+### 4️⃣ Processamento
+
+O sistema calcula:
+
+- Economia mensal disponível
+- Valor necessário para atingir a meta
+- Viabilidade financeira
+
+### 5️⃣ Inteligência Artificial
+
+Os dados são enviados para o Google Gemini através de um prompt estruturado.
+
+### 6️⃣ Resultado
+
+A IA retorna um diagnóstico financeiro personalizado.
 
 ---
 
-## 🔑 Configuração da API
+# 📸 Funcionalidades da Interface
 
-Crie um arquivo:
+### Página Inicial
+
+- Hero principal
+- Formulário multi-step
+- Barra de progresso
+
+### Página de Resultado
+
+- Cards informativos
+- Diagnóstico financeiro
+- Sugestões da IA
+
+### Página de Histórico
+
+- Lista de simulações realizadas
+- Acesso rápido aos resultados anteriores
+
+---
+
+# 🔐 Variáveis de Ambiente
+
+Criar o arquivo:
 
 ```env
 .env.local
 ```
 
-Adicione sua chave da API Gemini:
+Adicionar:
 
 ```env
 VITE_GEMINI_API_KEY=SUA_CHAVE_AQUI
@@ -149,7 +235,7 @@ VITE_GEMINI_API_KEY=SUA_CHAVE_AQUI
 
 ---
 
-## ⚙️ Instalação
+# ⚙️ Instalação
 
 Clone o repositório:
 
@@ -157,7 +243,7 @@ Clone o repositório:
 git clone https://github.com/seu-usuario/planej-ai.git
 ```
 
-Acesse a pasta:
+Entre na pasta:
 
 ```bash
 cd planej-ai
@@ -177,7 +263,74 @@ pnpm dev
 
 ---
 
-## 👨‍💻 Autor
+# 📦 Dependências Principais
 
-Projeto desenvolvido para fins educacionais com foco na utilização de React e Inteligência Artificial Generativa aplicada à educação financeira.
+```json
+{
+  "react": "^19",
+  "react-dom": "^19",
+  "react-router-dom": "^7",
+  "lucide-react": "^0.500.0",
+  "react-loading-skeleton": "^3",
+  "typescript": "^5",
+  "vite": "^7"
+}
+```
 
+---
+
+# 💡 Principais Conceitos Aplicados
+
+- Componentização
+- React Hooks
+- Context API
+- React Router
+- LocalStorage
+- Consumo de APIs REST
+- Prompt Engineering
+- Integração com IA Generativa
+- Responsividade
+- TypeScript
+- Boas práticas de Front-End
+
+---
+
+# 🎓 Aprendizados Obtidos
+
+Durante o desenvolvimento deste projeto foram aplicados conhecimentos relacionados a:
+
+- Desenvolvimento Front-End moderno
+- Criação de interfaces reutilizáveis
+- Gerenciamento de estados globais
+- Persistência de dados no navegador
+- Integração com Inteligência Artificial
+- Engenharia de Prompt
+- Consumo de APIs externas
+- Estruturação de aplicações React em larga escala
+
+---
+
+# 🚀 Melhorias Futuras
+
+- Autenticação de usuários
+- Banco de dados online
+- Dashboard financeiro completo
+- Exportação de relatórios em PDF
+- Gráficos financeiros
+- Integração com Open Finance
+- Comparação entre múltiplas metas
+- Aplicativo mobile com React Native
+
+---
+
+# 👨‍💻 Autor
+
+Desenvolvido para fins acadêmicos e educacionais, aplicando conceitos de React, TypeScript e Inteligência Artificial Generativa.
+
+---
+
+# 📄 Licença
+
+Este projeto está sob a licença MIT.
+
+Sinta-se livre para utilizar, estudar e aprimorar o código.
